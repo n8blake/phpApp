@@ -1,0 +1,21 @@
+body {
+    background-color: #EDEDED;
+    font-family: sans-serif;
+}
+
+h1, form, .response {
+    background-color: #CDCDCD;
+    padding: 10px;
+}
+
+[type=submit] {
+    background-color: #008A10;
+}
+
+.error {
+    color: #F00;
+}
+
+.response {
+    color: #008A10;
+}
