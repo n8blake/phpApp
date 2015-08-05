@@ -1,0 +1,60 @@
+/*
+---- THIS IS THE WIDE ONE ---
+*/
+body{
+	font-family: sans-serif;
+}
+
+div#nav{
+	position: fixed;
+	height: 100%;
+	width: 150px;
+	left: 0px;
+	top: 0px;
+	background-color: #ccc;
+	margin: none;
+	padding: none;
+}
+
+.button{
+
+	width: 150px;
+	height: 25%;
+	background-color: #AAA;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'FontAwesome';
+
+}
+
+.icon{
+	position: relative;
+	top: 40%;
+	vertical-align: middle;
+	font-family: 'FontAwesome';
+	font-size: 600%;
+}
+
+.top-icon{
+
+	position: fixed;
+	left: 50%;
+
+}
+
+.button:hover{
+	background-color: #DAA;
+}
+
+.button:active{
+
+	background-color: #AAD;
+}
+
+#content{
+	position: fixed;
+	width: 70%;
+	height: 100%;
+	left: 150px;
+	top: 0px;
+}

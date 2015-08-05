@@ -1,0 +1,36 @@
+table {
+	
+	width: 30%;
+	margin : auto;
+	background-color: #FFF;
+
+}
+
+tr {
+
+	height: 20px;
+
+}
+
+td {
+
+	width: 50px;
+}
+
+tr.odd-row{
+
+	background-color: #DDD;
+}
+
+body {
+
+	background-color: #AAA;
+
+}
+
+.check-box{
+
+	text-align: center;
+	float: right;
+	
+}

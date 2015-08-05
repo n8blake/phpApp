@@ -1,1 +1,44 @@
-id	|	username	|	FirstName	|	LastName	|
+//MEMEBERS TABLE//
+id			|	username	|	FirstName	|	LastName	|	Rank	|	Schedule	|	email				|	record_date
+------------|---------------|---------------|---------------|-----------|---------------|-----------------------|---------------
+anglsey		|	cangle		|	Charles		|	Anglesey	|	PO3		|	W-F			|	someemail@email.com	|	DTS
+blake		|	nblake		|	Nathan		|	Blake 		|	PO3		|	M-W			|						|	DTS
+burley		|	rburle		|	Rehma 		| 	Burley 		|	PO1		|	M-CPO		|						|	DTS
+campbell	|	pcampb		|	Parker		|	campbell	|	PO*		|	W-F			|						|	DTS
+cantu		|	jcantu		|	Joshua		|	cantu		|	PO*		|	W-F			|						|	DTS
+crawford	|	dcrawf		|	Dante		|	crawford	|	PO*		|	MIDS		|						|	DTS
+davis		|	adavis		|	Allen		|	davis		|	PO*		|	W-F			|						|	DTS
+ekker		|	mekker		|	Matthew		|	ekker		|	PO*		|	M-W			|						|	DTS
+fulton		|	sfulto		|	Samantha	|	fulton		|	PO*		|	W 			|						|	DTS
+gamble		|	dgambl		|	Deswande	|	gamble		|	PO*		|	W 			|						|	DTS
+goss		|	kgoss		|	Kaleb		|	goss		|	PO*		|	W 			|						|	DTS
+johnson		|	njohns		|	Nicholas	|	johnson		|	PO*		|	W 			|						|	DTS
+korinis		|	nkorin		|	Nicholas	|	korinis		|	PO*		|	W 			|						|	DTS
+langenfeld	|	clange		|	Christian	|	langenfeld	|	PO*		|	W 			|						|	DTS
+martinez	|	nmarti		|	Nicholas	|	martinez	|	PO*		|	W 			|						|	DTS
+noyes		|	mnoyes		|	Matthew		|	noyes		|	PO*		|	W 			|						|	DTS
+premo		|	apremo		|	Ariel		|	premo		|	PO*		|	W 			|						|	DTS
+sayre		|	rsayre		|	Richel		|	sayre		|	PO*		|	W 			|						|	DTS
+scott		|	vscott		|	Vaughn		|	scott		|	CPO		|	W 			|						|	DTS
+valentine	|	gvalen		|	Giancarlo	|	valentin	|	PO*		|	W 			|						|	DTS
+welch		|	dwelch		|	Daniel		|	welch		|	PO*		|	W 			|						|	DTS
+williams	|	awilli		|	Aaron		|	williams	|	PO*		|	W 			|						|	DTS
+
+
+//LOGINS -- HANDLED BY SQLite DB//
+(id			|	username	|	password	| record_date )
+
+//ATTENDANCE TABLE//
+id (INT)	|	username (VARCHAR)	|	(date) 		|	presnece	|	note	 (VARCHAR)		|	record_date (DTS)
+1			|	cangle				|	2015-07-15	|	1			|	present					| 	DTS
+2			|	nblake				|	2015-07-15	|	1			|	present					| 	DTS
+3			|	nkorin				|	2015-07-15	|	0			|	absent					| 	DTS
+4 			|	dwelch				|	2015-07-15 	|	0			|	mission exmpt			|	DTS
+4 			|	dwelch				|	2015-07-15 	|	1			|	mission exmpt			|	DTS
+
+//PT_SCHEDUEL TABLE//
+id	|	date		|	location	|	weather			| record_date
+1 	|	2015-07-15 	|	Medina		|	{flag:"black"}	|	
+2
+3
+4

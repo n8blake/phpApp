@@ -1,19 +1,98 @@
-body {
+body{
 
-	text-align: center;
+	font-family: sans-serif;
+
 }
+h3{
 
-h1 {
-	
-	color: red;
-}
-
-h2 {
-
-	
+	font-size: 2em;
 }
 
 p {
 	position: relative;
-	float: right;
+	font-size: 3em;
+
 }
+
+a{
+	text-decoration: none;
+}
+
+a#login-user{
+	position: relative;
+	top: -60px;
+	float: right;
+	vertical-align: middle;
+	color: #FFF;
+
+}
+
+a:hover{
+
+	color: #333;
+}
+
+.console_message {
+
+	font-size: 10px;
+	color: #AAA;
+
+}
+
+.top-icon{
+
+	font-family: 'FontAwesome';
+
+}
+
+#nav{
+
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	height: 100px;
+	background-color: #CCC;
+	position: absolute;
+	padding: none;
+	margin: none;
+
+
+}
+
+#buttons{
+	position: relative;
+	width: 400px;
+	font-size: 50px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+
+}
+
+button {
+
+	font-size: 50px;
+	border: none;
+
+
+}
+
+#content{
+
+	position: absolute;
+	width: 100%;
+	background-color: #CCC;
+	margin: none;
+	padding: none;
+	left: 0px;
+	top: 100px;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+
+
+
+
+

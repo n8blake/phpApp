@@ -8,34 +8,41 @@
 	$host = "localhost:8889";
 	$db = "";*/
 
-	$sql_result;
 
-	$user = 'root';
-	$password = 'root';
-	$db = 'myDB';
-	$host = 'localhost';
-	$port = 8889;
+		$sql_result;
 
-	$link = mysqli_init();
+		$user = 'root';
+		$password = 'root';
+		$db = 'myDB';
+		$host = 'localhost';
+		$port = 8889;
 
-	$conn = new mysqli($host, $user, $password, $db);
-		// Check connection
-		if ($conn->connect_error) {
-		    die("Connection failed: " . $conn->connect_error);
-		} 
-	$success = mysqli_real_connect(
-	   $link, 
-	   $host, 
-	   $user, 
-	   $password, 
-	   $db,
-	   $port
-	);
+		$link = mysqli_init();
 
+		$conn = new mysqli($host, $user, $password, $db);
+			// Check connection
+			if ($conn->connect_error) {
+			    die("Connection failed: " . $conn->connect_error);
+			} 
+		$success = mysqli_real_connect(
+		   $link, 
+		   $host, 
+		   $user, 
+		   $password, 
+		   $db,
+		   $port
+		);
+
+		$date = "2015-07-24";
+
+		$sql = 'SELECT * from `pt_schedule` WHERE `date`=\'' . $date . '\'';
+
+		$result = $conn->query($sql);
+		$sql_result = $result->fetch_assoc();
 		
 		//global $sql_result;
 
-		$date = "";
+		
 
 		function set_date($newdate){
 			global $date;
@@ -43,10 +50,9 @@
 
 		}
 
-		$sql = 'SELECT * from `pt_schedule` WHERE `date`=\'' .$date .'\'';
 
-		$result = $conn->query($sql);
-		$sql_result = $result->fetch_assoc();
+
+		
 
 		function echo_leader() {
 			global $sql_result;
