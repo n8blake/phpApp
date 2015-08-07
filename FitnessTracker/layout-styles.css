@@ -19,14 +19,16 @@ div#nav{
 }
 
 .button{
-
-	width: 24.6%;
+	position: absolute;
+	width: 25%;
 	height: 99%;
 	background-color: #AAA;
 	text-align: center;
 	border: none;
 	vertical-align: middle;
 	font-family: 'FontAwesome';
+	padding:none;
+	margin: none;
 
 }
 

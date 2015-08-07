@@ -17,9 +17,21 @@ $("document").ready(function(){
 
 	if (h < w){
 			$("#primary-style").html("<link rel='stylesheet' type='text/css' href='layout-styles-wide.css'>");
+
 		} else {
 			$("#primary-style").html("<link rel='stylesheet' type='text/css' href='layout-styles.css'>");
 		}
+
+		var c = $("#nav").children();
+		var q1  = w * .25;
+		var q2 = w * .5;
+		var q3 = w * .75;
+		$("#today").css({"left" : "0"});
+		$("#attendance").css({"left" : q1});
+		$("#stats").css({"left" : q2});
+		$("#settings").css({"left" : q3});
+		console.log(c[0]);
+
 	}
 
 	console.log(w);
@@ -27,19 +39,19 @@ $("document").ready(function(){
 	//	$("#primary-style").
 
 	$("#today").click(function(){
-		$("#content").load("pages/today.html");
+		$("#content").load("pages/today.php");
 	});
 
 	$("#attendance").click(function(){
-		$("#content").load("pages/attendance.html");
+		$("#content").load("pages/attendance.php");
 	});
 
 	$("#stats").click(function(){
-		$("#content").load("pages/stats.html");
+		$("#content").load("pages/stats.php");
 	});
 
 	$("#settings").click(function(){
-		$("#content").load("pages/settings.html");
+		$("#content").load("pages/settings.php");
 	});
 
 
