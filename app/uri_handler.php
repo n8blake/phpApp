@@ -13,22 +13,28 @@
 		*	This will have to be adjusted based on your initial directory set up.
 		*/
 
+		///////////////////////////////////////////////////////////////////////////////////////////////////
+		//  BASE_URL WILL NEED TO BE RESET IF YOUR DIRECTORY STRUCTURE IS DIFFERENT... PAY ATTENTION!!!  //
+		///////////////////////////////////////////////////////////////////////////////////////////////////
+
+		define('BASE_URL', '/php/' . APP_NAME );
+
 		$REQUESTED_CONTROLLER  = '';
 
-		if (count($path) < 3){
+		if (count($path) <= 3){
 
 			$REQUESTED_CONTROLLER = 'home';
-
-		} elseif (count($path) == 3) {
-
-			$REQUESTED_CONTROLLER = $path[3];
 
 		} elseif (count($path) == 4) {
 
 			$REQUESTED_CONTROLLER = $path[3];
-			$REQUESTED_ACTION = $path[4];
 
-		} elseif (count($path) >= 5) {
+		} elseif (count($path) == 5) {
+
+			$REQUESTED_CONTROLLER = $path[3];
+			$REQUESTED_ACTION = $path[3];
+
+		} elseif (count($path) >= 6) {
 
 			$REQUESTED_CONTROLLER = $path[3];
 			$REQUESTED_ACTION = $path[4];
@@ -51,7 +57,7 @@
 
 			} else {
 
-				include '.controllers/404.php';
+				include './controllers/404.php';
 
 			}
 
